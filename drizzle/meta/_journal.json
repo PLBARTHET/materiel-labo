@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1786641676532,
+      "tag": "0000_blushing_leopardon",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1786805937766,
+      "tag": "0001_friendly_cassandra_nova",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1786807078632,
+      "tag": "0002_amazing_pretty_boy",
+      "breakpoints": true
+    }
+  ]
+}

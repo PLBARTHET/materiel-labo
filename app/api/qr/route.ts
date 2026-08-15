@@ -1,0 +1,3 @@
+import QRCode from "qrcode";
+import { isStaff } from "../_shared";
+export async function GET(req:Request){if(!(await isStaff(req)))return Response.json({error:"Non autorisé"},{status:401});const url=new URL(req.url).searchParams.get("url")||"";if(!url.startsWith(new URL(req.url).origin)||url.length>1500)return Response.json({error:"URL invalide"},{status:400});const png=await QRCode.toBuffer(url,{type:"png",width:700,margin:3,errorCorrectionLevel:"M",color:{dark:"#16332f",light:"#ffffff"}});return new Response(new Uint8Array(png),{headers:{"content-type":"image/png","cache-control":"private, max-age=3600"}})}
