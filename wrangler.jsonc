@@ -14,6 +14,8 @@
   "d1_databases": [
     {
       "binding": "DB",
+      "database_name": "materiel-labo-db",
+      "database_id": "1529c7da-f3ba-4cf9-82c1-002dda7d1eea",
       "migrations_dir": "drizzle"
     }
   ]
